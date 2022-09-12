@@ -1,0 +1,70 @@
+body{
+    background-image: url(./img/Tiro\ horizontal\ de\ un\ campo\ de\ hermosas\ flores\ de\ lavanda\ inglesa\ púrpura\ bajo\ un\ colorido\ cielo\ nublado\ _\ Foto\ Gratis.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Roboto', sans-serif; /*Open Sans o Roboto*/    
+}
+
+#calculadora{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: solid rgb(7, 7, 7) 1vh;
+    width: 40%;
+    margin: auto;
+    margin-top: 2%;
+    border-top-left-radius: 2vh;
+    border-top-right-radius: 2vh;
+    background-image: url(./img/Fondo\ pintado\ a\ mano\ abstracto\ rosa\ _\ Vector\ Gratis.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#pantalla{
+    display: flex;
+    flex-direction: row;
+    border-radius: 1vh;
+    border: solid grey;
+    background-color: rgb(219, 216, 216);
+    width: 85%;
+    justify-content: end;
+    margin: 6%;
+    padding: 1%;
+}
+
+p{
+    font-size: 5vh;
+}
+
+
+/*Seccion botoncitos*/
+
+#botones{
+    border-top: solid rgba(226, 224, 228, 0.895);
+    background: rgb(229, 229, 231);    
+    width: 100%;
+    padding: 2%;
+    padding-top: 4%;
+    padding-bottom: 4%;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    gap: 1vh;
+    padding: 1vh;
+    font-size: 4vh;
+} 
+  .item1{
+    grid-row-start: 5;
+    grid-row-end: 7;
+    grid-column: 6;
+  }
+
+  .grid-item{
+    row-gap: 0px;
+  }
+
+button{
+    background-color: rgba(230, 221, 221, 0.884);
+}

@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600');
+body{
+    background: #000000;  
+    background: -webkit-linear-gradient(to right, #6f6e6e, #000000);  
+    background: linear-gradient(to right, #6f6e6e, #000000); 
+    font-family: 'Open Sans', sans-serif; /*Open Sans o Roboto*/    
+    
+}
+
+/*Estilos de presentacion*/
+#fondoBienvenida{
+    background-image: url(./IMAGENES/Central/imagenCentral.png);
+    background-size: cover;
+    background-repeat: no-repeat;         
+    background-position: center center;          
+    min-height: 100vh; 
+  
+}
+
+.btnConocenos{
+    background: #000000be;  
+    background: -webkit-linear-gradient(to right, #6f6e6ebd, #000000be);  
+    background: linear-gradient(to right, #6f6e6ebd, #000000be);     
+    border: none;
+    border-radius: 20px;
+}
+
+
+/*Estilos de Cards en general*/
+.cardGenerales{
+    border: none;
+    background-color: transparent;
+    padding: 1em;
+    margin: none;    
+}
+
+
+/* Clases de PRODUCTOS*/
+.colorTituloCard{
+    color:#D5AC8C !important;
+}
+
+.fondoCardProductos{
+    background-color: #000000 !important;
+    border: none;
+}
+
+.bordeBotonCardProductos{
+    color:#D5AC8C !important;
+    border-color: #D5AC8C !important;
+}
+
+
+/*Producto General*/
+.colorTituloProducto{
+    color:#80583b !important;
+}
+
+.bordeBotonProductos{
+    color:#80583b !important;
+    border-color: #80583b !important;
+}
+
+.fondoCardProductosAlfajor{
+    background-color: #D5AC8C !important;
+    border: none;
+}
+
+.colorTituloProducto{
+    color:#63421E !important;
+}
+
+/*Calidad*/
+.divCalidad{
+    background-color: white!important;     
+}
+
+.divInput{
+    background-color:#8f6445 !important;     
+}
+
+.colorInput{
+    color: #80583b !important;
+}
+
+/*Card*/
+.divCard{
+    background-color: #d5b9a4!important;     
+}
+
+
+/*Media query*/
+@media screen and (min-width:480px) and (max-width:940px){
+    .cardGenerales{
+        color: black;
+    }
+}
+
+@media screen and (min-width:941px) and (max-width:1300px){
+    #fondoBienvenida{
+        height: 100%;
+    }
+    #contenedorBienvenida{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-end;
+    }
+    .contenedorTexto{
+        margin: 4rem;
+    }
+    
+}
+
+@media screen and (min-width:1301px){
+    #contenedorBienvenida{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-end;               
+    }
+    .contenedorTexto{
+        margin: 4rem;        
+    }
+}
