@@ -17,6 +17,10 @@ body{
   
 }
 
+.contenedorTexto{    
+    width: 32rem;
+}
+
 .btnConocenos{
     background: #000000be;  
     background: -webkit-linear-gradient(to right, #6f6e6ebd, #000000be);  
@@ -52,7 +56,7 @@ body{
 
 
 /*Producto General*/
-.colorTituloProducto{
+.colorFondo{
     color:#80583b !important;
 }
 
@@ -62,12 +66,8 @@ body{
 }
 
 .fondoCardProductosAlfajor{
-    background-color: #D5AC8C !important;
+    background-color: #bca177 !important;
     border: none;
-}
-
-.colorTituloProducto{
-    color:#63421E !important;
 }
 
 /*Calidad*/
@@ -79,20 +79,36 @@ body{
     background-color:#8f6445 !important;     
 }
 
-.colorInput{
-    color: #80583b !important;
-}
 
-/*Card*/
-.divCard{
-    background-color: #d5b9a4!important;     
-}
 
 
 /*Media query*/
+/*modelo celular max-width:480px */
+@media screen and (max-width:480px){ 
+    .cardGenerales{
+        color: black;
+    }
+
+    .contenedorTexto{
+        width: auto;        
+    }
+
+    .cardProduct{
+        margin-top: 4px;        
+    }
+}
+
 @media screen and (min-width:480px) and (max-width:940px){
     .cardGenerales{
         color: black;
+    }
+
+    .contenedorTexto{
+        width: 100px;        
+    }
+
+    .cardProduct{
+        margin-top: 4px;        
     }
 }
 
