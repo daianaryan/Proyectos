@@ -25,18 +25,11 @@ body{
 	box-shadow: 3px 2px 0px 5px #00000033;
 }
 
-/* Visor Resultado */
-
-/*
-#visor{
-	width: 300px;
-	height: 40px;
-	background-color: #bdbbbb;
-	border-radius: 5px;
-	align-items: center;
+.cajaMinimiza{
+	height: 81vh;
 }
-*/
 
+/* Visor Resultado */
 #pantalla{
 	background-color: rgba(16, 2, 72, 0.091);
 	box-shadow: 0px 0px 0px 1px #00000033;
@@ -94,56 +87,53 @@ body{
 	background: linear-gradient(180deg, #5b5b5b 5%, #5b5b5b 100%);
 }
 
+/*Animacion Corazon*/
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-form {
-  width: 100%;
-  max-width: 400px;
-  text-align: center;
-  border: solid 1px #c2c2c2;
-  padding-bottom: 10px;
-  margin: auto;
-  background: #fafafa;
+.heart {
+    background: rgb(215, 212, 212);	
+    position: relative;
+    height: 50px;
+    width:50px;    
+    transform: rotate(-45deg) scale(1);
+    animation: pulse 2s linear infinite;
 }
 
-input[type=textfield] {
-    width: 75%;
-    padding: 16px 32px;
-    font-size: 16px;
-    margin: 8px 0;
-    border: 1px solid silver;
-    border-radius: 1px;
-    text-align: left;
-    color: #333;
-    background: #ccc;
+.heart::after {    
+    background:inherit;
+    border-radius: 50%;	
+    content:'';
+    position:absolute;    
+    top: -50%;    
+    left:0;
+    height: 50px;
+    width:50px;
 }
-input[type=button], input[type=submit], input[type=reset] {
-    background-color: #4CAF50;
-    border: none;
-    color: white;
-    padding: 16px 32px;
-    font-size: 16px;
-    min-width: 21%;
-    text-decoration: none;
-    margin: 4px 2px;
-    cursor: pointer;
+.heart::before {  
+    background:inherit; 
+    border-radius: 50%; 
+    content:'';
+    position:absolute;
+    top:0; 
+    right:-50%; 
+    height: 50px;
+    width:50px;
 }
-input[type=button]:hover, input[type=submit]:hover, input[type=reset]:hover {
-  background-color: #333;
+  
+@keyframes pulse{
+    0% {
+        transform: rotate(-45deg) scale(1);
+        opacity: 0;
+    }
+    50% {
+        transform: rotate(-45deg) scale(1.3);
+        opacity: 1;
+    }
+    100% {
+        transform: rotate(-45deg) scale(1);
+        opacity: 1;
+    }
 }
+
 
 /*Media query*/
 @media screen and (max-width:940px){
@@ -152,8 +142,41 @@ input[type=button]:hover, input[type=submit]:hover, input[type=reset]:hover {
 		height: auto;
     }
 
+	.heart{
+		height: 0%;
+		width: 0%;
+	}
+
+	.heart::after {
+		height: 0%;
+		width: 0%;
+	}
+
+	.heart::before { 
+		height: 0%;
+		width: 0%;
+	}
+
 	.footer{
 		width: auto;
 		height: auto;
+	}
+	
+}
+
+@media screen and (max-width:1130px) {
+	.heart{
+		height: 0%;
+		width: 0%;
+	}
+
+	.heart::after {
+		height: 0%;
+		width: 0%;
+	}
+
+	.heart::before { 
+		height: 0%;
+		width: 0%;
 	}
 }

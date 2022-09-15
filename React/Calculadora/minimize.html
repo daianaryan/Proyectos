@@ -29,7 +29,7 @@
 -->  
         
         <h5 class="m-2 p-2">No pienses en el resultado ... <br> <span class="m-5 p-5">solo hazlo!</span> </h5>            
-        <div class="container">
+        <div class="container cajaMinimiza">
             <div id="contenedor_calculadora" class="container"> 
                 
                 <!-- Menu Calculadora -->                      
@@ -37,61 +37,10 @@
                     <div class="col-md-6">
                         <p style="font-size: 12px;">Calculadora</p>
                     </div>
-                    <div class="col-md-6 d-flex justify-content-end">                         
-                        <a href="minimize.html" style="color:#000000;"><span class="material-symbols-outlined">minimize</span></a>                        
+                    <div class="col-md-6 d-flex justify-content-end">                                            
+                        <a href="index.html" style="color:#000000;"><span class="material-symbols-outlined">web_asset</span></a>
                         <a href="out.html" style="color:#000000;"><span class="material-symbols-outlined">close</span></a>
                     </div>
-                </div>
-
-                <!-- Visor Resultado -->
-                <div id="pantalla" type="textfield" name="ans" value="" class="d-flex align-items-end flex-column justify-content-between">
-                    <div id="valor-anterior" class="fw-bold" style="font-size: 20px;"></div>
-                    <div id="valor-actual" style="font-size: 15px;"></div>                
-                    <!-- <div id="visor" type="textfield" name="ans" value=""><input type="textfield" name="ans" value=""></div> -->
-                </div>
-
-                <!--Botones-->
-                <div id="teclado" class="">
-                    <button type="button" class="boton">(</button>
-                    <button type="button" class="boton">)</button>
-                    <button type="button" class="boton" >X!</button>
-                    <button type="button" class="boton">x²</button>
-                    <button type="button" class="boton">√</button>
-                    <button type="button" class="boton">√x</button>
-        
-                    <button type="button" class="boton">sin</button>
-                    <button type="button" class="boton">cos</button>
-                    <button type="button" class="boton">tg</button>
-                    <button type="button" class="boton">x³</button>
-                    <button type="button" class="boton">∛</button>
-                    <button type="button" class="boton">xⁿ</button>
-        
-                    <button type="button" class="boton numero">7</button>
-                    <button type="button" class="boton numero">8</button>
-                    <button type="button" class="boton numero">9</button>
-                    <button type="button" class="boton operador" value="dividir">/</button>
-                    <button type="button" class="boton">%</button>
-                    <button type="button" class="boton">In</button>
-        
-                    <button type="button" class="boton numero">4</button>
-                    <button type="button" class="boton numero">5</button>
-                    <button type="button" class="boton numero">6</button>
-                    <button type="button" class="boton operador" value="multiplicar">*</button>
-                    <button type="button" class="boton">log</button>
-                    <button type="button" class="boton">e</button>
-        
-                    <button type="button" class="boton numero">1</button>
-                    <button type="button" class="boton numero">2</button>
-                    <button type="button" class="boton numero">3</button>
-                    <button type="button" class="boton numero" value="restar">-</button>
-                    <button type="button" class="boton operador" onclick="display.borrarTodo()">AC</button>
-                    <button type="button" class="boton operador btn-equal equal" value="igual">=</button>
-        
-                    <button type="button" class="boton numero">.</button>
-                    <button type="button" class="boton numero">0</button>
-                    <button type="button" class="boton">π</button>
-                    <button type="button" class="boton operador" value="sumar">+</button>
-                    <button type="button" class="boton">MR</button>            
                 </div>
             </div> 
         </div>
