@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad Práctica - JavaScript Unidad 1</title>
+    <!--Estilos de Bootstrap y propios-->
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">   
+    <link rel="stylesheet" href="https://kit.fontawesome.com/8552914272.js">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- 1. Escribe un programa de una sola línea que haga que aparezca en la pantalla un alert que diga “Hello World”. -->
+<h5>Ejecicio 1: </h5>
+<script>alert("Hello World");</script>
+
+<!-- 2. Escribe un programa de una sola línea que escriba en la pantalla un texto que diga “Hello World” (document.write). -->
+
+<script>document.write("Hello World");</script>
+
+<!-- 3. Escribe un programa de una sola línea que escriba en la pantalla el resultado de sumar 3 + 5. -->
+<br><br>
+<h5>Ejecicio 2: </h5>
+<script>document.write(3+5);
+</script>
+
+<!--  4. Escribe un programa de dos líneas que pida el nombre del usuario con un prompt y escriba un texto que diga “Hola nombreUsuario” -->
+<br><br>
+<h5>Ejecicio 3: </h5>
+<script>
+    var nombre = prompt ("Ingrese su nombre", "") 
+    document.write( "Hola " + nombre)
+</script>
+
+<!-- 5. Escribe un programa de tres líneas que pida un número, pida otro número y escriba el resultado de sumar estos dos números. -->
+<br><br>
+<h5>Ejecicio 5: </h5>
+<script>
+    let numero1 = prompt ("Ingrese un numero", "") 
+    let numero2 = prompt ("Ingrese otro numero", "") 
+
+    document.write("La suma es: "+ (parseInt(numero1) + parseInt(numero2)))
+    
+</script>
+
+<!-- 6. Escribe un programa que pida dos números y escriba en la pantalla cual es el mayor. -->
+<br><br>
+<h5>Ejecicio 6: </h5>
+<script>
+    let nro1 = prompt ("Ingrese un numero", "") 
+    let nro2 = prompt ("Ingrese otro numero", "") 
+
+    if (nro1 > nro2) {
+        document.write(nro1)
+    }else{        
+        document.write(nro2)        
+    }        
+</script>
+
+<!-- 7. Escribe un programa que pida 3 números y escriba en la pantalla el mayor de
+los tres. -->
+<br><br>
+<h5>Ejecicio 7: </h5>
+<script>
+    let num1 = prompt ("Ingrese el primer numero", "") 
+    let num2 = prompt ("Ingrese un segundo numero", "") 
+    let num3 = prompt ("Ingrese un tercer numero", "") 
+
+    if (num1 > num2 && num1 > num3) {
+        document.write(num1)                   
+    }else if (num2 > num3) {
+            document.write(num2)                        
+        }else{
+            document.write(num3)
+        }                    
+</script>
+
+<!-- 8. Escribe un programa que pida un número y diga si es divisible por 2 -->
+<br><br>
+<h5>Ejecicio 8: </h5>
+<script>
+    let n1 = prompt ("Ingrese un numero", "")     
+
+    if (n1 % 2 === 0) {
+        document.write("Es un numero divisible por 2")
+    }else{    
+        document.write("No es un numero divisible por 2")
+    }        
+</script>
+
+<!-- 9. Escribe un programa que pida una frase y escriba cuantas veces aparece la letra a -->
+<br><br>
+<h5>Ejecicio 9: </h5>
+<script>
+    var text = prompt("Escribe una frase");        
+
+    for (i = 0; i < text.length; i++) {
+        if (text.substr(i,1) === "a") {
+            document.write(text.substr(i,1));
+        }
+    }        
+</script>
+
+<!-- 10. Escribe un programa que pida una frase y escriba las vocales que aparecen -->
+<br><br>
+<h5>Ejecicio 10: </h5>
+<script>
+    var text = prompt("Escribe una frase");
+        
+    for (i = 0; i < text.length; i++) {
+        if (text.substr(i,1) === "a" || text.substr(i,1) === "e" || text.substr(i,1) === "i" || text.substr(i,1) === "o" || text.substr(i,1) === "u") {
+            document.write(text.substr(i,1));
+        }
+    }       
+</script>
+
+<!-- 11. Escribe un programa que pida una frase y escriba cuántas de las letras que
+tiene son vocales -->
+
+
+<!-- 12. Escribe un programa que pida una frase y escriba cuántas veces aparecen
+cada una de las vocales -->
+
+<!-- 13. Escribe un programa que pida un número y nos diga si es divisible por 2, 3, 5 o
+7 (sólo hay que comprobar si lo es por uno de los cuatro) -->
+<br><br>
+<h5>Ejecicio 13: </h5>
+<script>
+    let number1 = prompt ("Ingrese un numero", "")     
+
+    if (number1 % 2 === 0 || number1 % 3 === 0 || number1 % 5 === 0 || number1 % 7 === 0) {
+        document.write("Es un numero divisible por 2, 3, 5 o 7")
+    }else{    
+        document.write("No es un numero divisible por 2, 3, 5 o 7")
+    }        
+</script>
+
+<!-- 14. Añadir al ejercicio anterior que nos diga por cual de los cuatro es divisible (hay
+que decir todos por los que es divisible) -->
+<br><br>
+<h5>Ejecicio 14: </h5>
+<script>
+    let nber1 = prompt ("Ingrese un numero", "")     
+
+    if (nber1 % 2 === 0 || nber1 % 3 === 0 || nber1 % 5 === 0 || nber1 % 7 === 0) {
+        if (nber1 % 2 === 0){
+            document.write("Es divisible por 2. ");
+        } 
+        if (nber1 % 3 === 0){
+            document.write("Es divisible por 3. ");
+        } 
+        if (nber1 % 4 === 0){
+            document.write("Es divisible por 5. ");
+        } 
+        if (nber1 % 7 === 0){
+            document.write("Es divisible por 7. ");
+        } 
+    }        
+</script>
+
+<!-- 15. Escribir un programa que escriba en pantalla los divisores de un número dado -->
+<br><br>
+<h5>Ejecicio 15: </h5>
+<script>
+    var nume1 = prompt("Escribe un número");
+    
+    for (i=0; i < nume1/2; i++) {
+        if (nume1 % i === 0) {
+        document.write(i,", ");
+        }
+    }       
+</script>
+
+<!-- 16. Escribir un programa que escriba en pantalla los divisores comunes de dos números dados -->
+<br><br>
+<h5>Ejecicio 16: </h5>
+<script>
+    var nn1 = prompt("Escribe un número");
+    var nn2 = prompt("Escribe otro número");
+    var menor;
+    
+    if (nn1 < nn2) {
+        menor = nn1;
+    } else {
+        menor = nn2;
+    }
+    for (i=0; i < menor/2; i++) {
+        if (nn1 % i === 0 && nn2 % i === 0) {
+            document.write(i,", ");
+        }
+    } 
+</script>
+
+<!-- 17. Escribir un programa que nos diga si un número dado es primo (no es divisible
+por ninguno otro número que no sea él mismo o la unidad) -->
+<br><br>
+<h5>Ejecicio 17: </h5>
+<script>
+    // Solución 1 
+var no = prompt("Escribe un número");
+var primer = true;
+    for (i=0; i<no / 2; i++) {
+        if (no % i === 0) {
+            primer = false;
+        }
+    }
+
+    if (primer) {
+        document.write("El número es primo");
+    } else {
+        document.write("El número no es primo");
+    }
+
+// Solución 2 
+var no = prompt("Escribe un número");
+var i = 2;
+    while (no % i !== 0 && i < no / 2 ) {
+        i++;
+    }
+
+    if (no % i !== 0) {
+        document.write("El número es primo");
+    } else {
+        document.write("El número no es primo");
+    }
+    
+</script>
+
+<!-- 18. Pide la edad y si es mayor de 18 años indica que ya puede conducir -->
+
+    <!-- 19. Pide una nota (número). Muestra la calificación según la nota:
+● 0-3: Muy deficiente
+● 3-5: Insuficiente
+● 5-6: Suficiente
+● 6-7: Bien
+● 7-9: Notable
+● 9-10: Sobresaliente -->
+
+<!-- 20. Realiza un script que pida cadenas de texto hasta que se pulse “cancelar”. Al
+salir con “cancelar” deben mostrarse todas las cadenas concatenadas con un guión -->
+
+<!-- 21. Realiza un script que pida números hasta que se pulse “cancelar”. Si no es un
+número deberá indicarse con un «alert» y seguir pidiendo. Al salir con “cancelar”
+deberá indicarse la suma total de los números introducidos. -->
+
+<!-- 22. Realizar una página con un script que calcule el valor de la letra de un número
+de DNI (Documento Nacional de Identidad).
+El algoritmo para calcular la letra del dni es el siguiente :
+● El número debe ser entre 0 y 99999999
+● Debemos calcular el resto de la división entera entre el número y el número -->
+
+<!-- 23.
+● Según el resultado, de 0 a 22, le corresponderá una letra de las siguientes:
+(T, R, W, A, G, M, Y, F, P, D, X, B, N, J, Z, S, Q, V, H, L, C, K, E)
+● Si lo introducido no es un número deberá indicarse con un alert y volver a
+preguntar.
+● Deberá de repetirse el proceso hasta que el usuario pulse «cancelar». -->
+
+<!-- 23. Realiza un script que escriba una pirámide del 1 al 30 de la siguiente forma : 1
+22
+333
+4444
+55555
+666666 -->
+
+<!-- 24. Haz un script que escriba una pirámide inversa de los números del 1 al
+número que indique el usuario de la siguiente forma : (suponiendo que indica 6).
+666666
+55555
+4444
+333
+22
+1 -->
+
+<!-- 25. Un script que escriba los números del 1 al 500, que indique cuáles son
+múltiplos de 4 y de 9 y que cada 5 líneas muestre una línea horizontal. Por ejemplo :
+123
+4 (Múltiplo de 4)
+5
+————————————————————
+67
+8 (Múltiplo de 4)
+9 (Múltiplo de 9)
+10
+-->
+
+  <!--Scripts de Bootstrap-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>     
+  <script src="https://kit.fontawesome.com/8552914272.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+  
+</body>
+</html>

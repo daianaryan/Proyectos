@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600');
+
+    *{
+        /*padding: 0;*/
+        box-sizing: border-box;
+    }
+
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: 'Fraunces', serif;	
+        height: 100vh; 
+        background: linear-gradient(
+        90deg,
+        rgb(187, 238, 242) 0%,
+        rgb(136, 188, 214) 50%,
+        rgb(215, 216, 216) 100%
+        );
+        } 
+  
+/* Navegador*/
+    .hoverMouse:hover {
+      background: transparent;        
+      color: #1e7078;
+    }
+   
+/*Estilos de presentacion*/
+    #fondoPresentacion{
+        background-image: url(img/parque6.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;         
+        background-position: center center;            
+        min-height: 100vh;      
+        filter: brightness(80%); 
+    }
+
+  .textPresentacion{
+    color: #3d98a0;
+  }
+
+  #fondo{
+    background-image: url(img/parque6.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;         
+    background-position: center center;
+    min-height: 50vh;     
+    filter: brightness(80%);                               
+  }
+  
+  .btnInfo{
+    background: #3d98a0;  
+    background: -webkit-linear-gradient(to right, #7d8e8e, #3d98a0);  
+    background: linear-gradient(to right, #7d8e8e, #3d98a0);     
+    border: none;
+    border-radius: 20px;
+  }
+
+  .btnHomero{
+    background: #000000be;  
+    background: -webkit-linear-gradient(to right, #6f6e6ebd, #000000be);  
+    background: linear-gradient(to right, #6f6e6ebd, #000000be);     
+    border: none;
+    border-radius: 20px;    
+  }
+
+
+main{    
+            
+}
+
+main>aside{
+    border: 2px blue solid;
+    min-height: 180px;    
+    height: auto;
+    float: left;
+}
+
+/* secciones */
+    #gif{
+        border: 2px;
+        margin:2rem ;
+        max-width: 300px;
+        background-color: aqua;
+    }
+
+/* Footer */
+  .footer{
+    border: 1px rgb(208, 208, 213) solid;
+    border-radius: 20px;  
+  }
+
+  .fab:hover {
+    background: linear-gradient(180deg, #abd1a4 5%, #48b831 100%);
+  }

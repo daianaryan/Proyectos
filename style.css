@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600');
+
+body{
+	margin: 0;
+	padding: 0;
+  	font-family: 'Fraunces', serif;	
+	height: 100vh; 
+    background: linear-gradient(180deg, #dfc5c5 5%, #8e6666 100%);; 
+}
