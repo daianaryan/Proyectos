@@ -23,6 +23,16 @@
       background: transparent;        
       color: #1e7078;
     }
+
+/* Nav Scroll */ 
+  nav.abajo{
+    background: #fff;
+  }
+  nav.abajo, 
+  nav.abajo ul li a, 
+  nav.abajo div i {
+    color: #e01b42;
+  }  
    
 /*Estilos de presentacion*/
     #fondoPresentacion{
@@ -31,7 +41,7 @@
         background-repeat: no-repeat;         
         background-position: center center;            
         min-height: 100vh;      
-        filter: brightness(80%); 
+        filter: brightness(80%);  
     }
 
   .textPresentacion{
@@ -43,7 +53,7 @@
     background-size: cover;
     background-repeat: no-repeat;         
     background-position: center center;
-    min-height: 50vh;     
+    min-height: 75vh;     
     filter: brightness(80%);                               
   }
   
@@ -62,11 +72,6 @@
     border: none;
     border-radius: 20px;    
   }
-
-
-main{    
-            
-}
 
 main>aside{
     border: 2px blue solid;
